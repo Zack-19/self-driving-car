@@ -125,7 +125,7 @@ class Car{
     
     }
 
-    draw(ctx,color){
+    draw(ctx,color,drawSensor=false){
         /*
         ctx.save();
         ctx.translate(this.x,this.y);
@@ -155,7 +155,7 @@ class Car{
             ctx.lineTo(this.polygon[i].x,this.polygon[i].y);
         }
         ctx.fill();
-        if(this.sensor){
+        if(this.sensor && drawSensor){
             this.sensor.draw(ctx);
         }
         
